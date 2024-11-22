@@ -19,6 +19,8 @@ import Dialog from 'primevue/dialog';
 import Calendar from 'primevue/calendar';
 import Tag from 'primevue/tag';
 import FileUpload from 'primevue/fileupload';
+import TreeTable from 'primevue/treetable';
+import ProgressSpinner from 'primevue/progressspinner';
 
 import 'primevue/resources/themes/lara-light-teal/theme.css';
 import 'primevue/resources/primevue.min.css';
@@ -45,6 +47,7 @@ app.component('Row', Row);
 app.component('Dialog', Dialog);
 app.component('Calendar', Calendar);
 app.component('Tag', Tag);
-app.component('FileUpload', FileUpload);
+app.component('TreeTable', TreeTable);
+app.component('ProgressSpinner', ProgressSpinner);
 
 app.mount('#app')

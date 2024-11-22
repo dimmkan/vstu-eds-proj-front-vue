@@ -34,4 +34,9 @@ export default class LabelsService {
   async saveChanges() {
     return instance.post(`/labels/savechanges`);
   }
+
+  async getShowcaseData() {
+    const response = await instance.get('/labels/showcase');
+    return response.data;
+  }
 }

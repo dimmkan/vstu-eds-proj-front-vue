@@ -34,6 +34,11 @@ const router = createRouter({
       name: 'users-labels',
       component: () => import('../views/LabelsView.vue')
     },
+    {
+      path: '/users-certificates',
+      name: 'users-certificates',
+      component: () => import('../views/UsersCertificates.vue')
+    },
     { 
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
