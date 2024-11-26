@@ -49,5 +49,6 @@ app.component('Calendar', Calendar);
 app.component('Tag', Tag);
 app.component('TreeTable', TreeTable);
 app.component('ProgressSpinner', ProgressSpinner);
+app.component('FileUpload', FileUpload);
 
 app.mount('#app')

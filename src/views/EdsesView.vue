@@ -106,7 +106,7 @@
     </Column>
     <Column headerStyle="width: 4rem; text-align: center" bodyStyle="text-align: center; overflow: visible">
       <template #body="{ data }">
-        <FileUpload v-if="!data.fileName" mode="basic" name="file" :maxFileSize="1000000" :customUpload="true"
+        <FileUpload style="font-size: 0.75rem;" v-if="!data.fileName" mode="basic" name="file" :maxFileSize="1000000" :customUpload="true"
           @uploader="uploadFile($event, data.id)" :multiple="false" :auto="true" chooseLabel="Загрузить" />
         <Tag style="cursor:pointer" v-if="data.fileName" :value="data.fileName" @click="downloadFile(data.id)"></Tag>
       </template>
@@ -119,8 +119,8 @@
     </Column>
     <Column headerStyle="width: 4rem; text-align: center" bodyStyle="text-align: center; overflow: visible">
       <template #body="{ data }">
-        <FileUpload v-if="!data.openPartFileName" mode="basic" name="file" :maxFileSize="1000000" :customUpload="true"
-          @uploader="uploadOpenPart($event, data.id)" :multiple="false" :auto="true" chooseLabel="Загрузить ОЧ" />
+        <FileUpload style="font-size: 0.75rem;" v-if="!data.openPartFileName" mode="basic" name="file" :maxFileSize="1000000" :customUpload="true"
+          @uploader="uploadOpenPart($event, data.id)" :multiple="false" :auto="true" chooseLabel="Загрузить ОЧ"/>
         <Tag style="cursor:pointer" v-if="data.openPartFileName" :value="data.openPartFileName" @click="downloadOpenPart(data.id)"></Tag>
       </template>
     </Column>
